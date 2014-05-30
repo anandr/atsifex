@@ -1,9 +1,8 @@
-function atsifex_CheckReturnCode(ret,varargin)
-% atsifex_CheckReturnCode(ret)
-% atsifex_CheckReturnCode(ret, ParamName,ParamVal)
+function [ret,ErrorMessage] = atsifex_CheckReturnCode(ret,varargin)
+% [ret,ErrorMessage] = atsifex_CheckReturnCode(ret)
+% [ret,ErrorMessage] = atsifex_CheckReturnCode(ret, ParamName,ParamVal)
 %       TriggerErrors       false | {true}
 %
-% msg = atsifex_CheckReturnCode(...)
 
 TriggerErrors       = GetParameter( 'TriggerErrors', varargin, true);
 
